@@ -1,0 +1,31 @@
+{
+  "name": "react-boilerplate",
+  "version": "0.2.0",
+  "description": "Quick packager-agnostic boilerplate for React modules using JSX",
+  "dependencies": {
+    "flux": "^2.0.1",
+    "koa": "0.18.0",
+    "koa-static": "^1.4.9",
+    "object-assign": "^2.0.0",
+    "react": "^0.12.2"
+  },
+  "devDependencies": {
+    "browserify": "^8.1.3",
+    "envify": "^3.2.0",
+    "gulp": "^3.8.11",
+    "gulp-browserify": "^0.5.1",
+    "gulp-jest": "^0.3.0",
+    "gulp-rename": "^1.2.0",
+    "jest-cli": "^0.3.0",
+    "react-tools": "^0.12.2",
+    "reactify": "^1.0.0"
+  },
+  "scripts": {
+    "build": "browserify public/app.js > public/bundle.js",
+    "test": "node --harmony node_modules/jest-cli/bin/jest"
+  },
+  "jest": {
+    "rootDir": "./public",
+    "scriptPreprocessor": "../jest-preprocessor.js"
+  }
+}
